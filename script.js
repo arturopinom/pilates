@@ -168,8 +168,8 @@ const WhatIsPilates = () => {
                     </div>
                     <div className="relative h-96 md:h-full min-h-96 rounded-2xl overflow-hidden shadow-2xl">
                         <img 
-                            src="https://images.unsplash.com/photo-1518611012118-696072aa579a?w=800&h=1000&fit=crop" 
-                            alt="Pilates practice" 
+                            src="https://images.unsplash.com/photo-1603988363607-e1e4a66962c6?w=800&h=1000&fit=crop" 
+                            alt="Persona practicando Pilates con consciencia y control" 
                             className="w-full h-full object-cover"
                         />
                     </div>
@@ -266,8 +266,8 @@ const PilatesForEveryone = () => {
                 <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
                     <div className="relative h-80 rounded-2xl overflow-hidden shadow-xl card-hover">
                         <img 
-                            src="https://images.unsplash.com/photo-1599901860904-17e6ed7083a0?w=600&h=800&fit=crop" 
-                            alt="Jóvenes practicando Pilates" 
+                            src="https://images.unsplash.com/photo-1518611012118-696072aa579a?w=600&h=800&fit=crop" 
+                            alt="Principiantes en clase de Pilates" 
                             className="w-full h-full object-cover"
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end">
@@ -276,8 +276,8 @@ const PilatesForEveryone = () => {
                     </div>
                     <div className="relative h-80 rounded-2xl overflow-hidden shadow-xl card-hover">
                         <img 
-                            src="https://images.unsplash.com/photo-1575052814086-f385e2e2ad1b?w=600&h=800&fit=crop" 
-                            alt="Adultos mayores" 
+                            src="https://images.unsplash.com/photo-1594737626072-90dc274bc2bd?w=600&h=800&fit=crop" 
+                            alt="Adultos mayores practicando Pilates" 
                             className="w-full h-full object-cover"
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end">
@@ -286,8 +286,8 @@ const PilatesForEveryone = () => {
                     </div>
                     <div className="relative h-80 rounded-2xl overflow-hidden shadow-xl card-hover">
                         <img 
-                            src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?w=600&h=800&fit=crop" 
-                            alt="Rehabilitación" 
+                            src="https://images.unsplash.com/photo-1576678927484-cc907957088c?w=600&h=800&fit=crop" 
+                            alt="Rehabilitación con Pilates terapéutico" 
                             className="w-full h-full object-cover"
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end">
@@ -296,8 +296,8 @@ const PilatesForEveryone = () => {
                     </div>
                     <div className="relative h-80 rounded-2xl overflow-hidden shadow-xl card-hover">
                         <img 
-                            src="https://images.unsplash.com/photo-1518310952931-b1de897abd40?w=600&h=800&fit=crop" 
-                            alt="Atletas" 
+                            src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=600&h=800&fit=crop" 
+                            alt="Atletas entrenando con Pilates" 
                             className="w-full h-full object-cover"
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end">
@@ -316,7 +316,7 @@ const TypesOfPractice = () => {
         {
             title: "Pilates Mat",
             description: "Ejercicios en suelo con tu propio peso corporal. Perfecto para comenzar y desarrollar fuerza fundamental.",
-            image: "https://images.unsplash.com/photo-1545205597-3d9d02c29597?w=800&h=600&fit=crop"
+            image: "https://images.unsplash.com/photo-1599901860904-17e6ed7083a0?w=800&h=600&fit=crop"
         },
         {
             title: "Pilates Reformer",
@@ -326,12 +326,12 @@ const TypesOfPractice = () => {
         {
             title: "Pilates Clínico",
             description: "Enfoque terapéutico para rehabilitación, lesiones y condiciones especiales bajo supervisión.",
-            image: "https://images.unsplash.com/photo-1571902943202-507ec2618e8f?w=800&h=600&fit=crop"
+            image: "https://images.unsplash.com/photo-1576678927484-cc907957088c?w=800&h=600&fit=crop"
         },
         {
             title: "Pilates Deportivo",
             description: "Optimizado para atletas y personas activas que buscan mejorar rendimiento y prevenir lesiones.",
-            image: "https://images.unsplash.com/photo-1518310952931-b1de897abd40?w=800&h=600&fit=crop"
+            image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&h=600&fit=crop"
         }
     ];
 
@@ -393,8 +393,8 @@ const StartToday = () => {
         <section className="relative py-32 md:py-40 overflow-hidden">
             <div className="absolute inset-0">
                 <img 
-                    src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=1920&h=1080&fit=crop" 
-                    alt="Yoga breathing" 
+                    src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=1920&h=1080&fit=crop" 
+                    alt="Persona meditando en posición de equilibrio" 
                     className="w-full h-full object-cover"
                 />
                 <div className="hero-overlay absolute inset-0" />
