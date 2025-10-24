@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    overflow-x: hidden;
+    color: #1a1a1a;
+}
+
+.font-inter {
+    font-family: 'Inter', sans-serif;
+}
+
+.font-dm {
+    font-family: 'DM Sans', sans-serif;
+}
+
+.hero-overlay {
+    background: linear-gradient(180deg, rgba(0,0,0,0.45) 0%, rgba(0,0,0,0.35) 100%);
+}
+
+.animate-fade-in {
+    animation: fadeIn 0.8s ease-out forwards;
+    opacity: 0;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in {
+    transform: translateY(20px);
+}
+
+.card-hover {
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-hover:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+.btn-primary {
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 24px rgba(12, 60, 120, 0.3);
+}
+
+.parallax-section {
+    transition: transform 0.5s ease-out;
+}
+
+.gradient-text {
+    background: linear-gradient(135deg, #0C3C78 0%, #31B977 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.icon-container {
+    transition: all 0.3s ease;
+}
+
+.icon-container:hover {
+    transform: scale(1.1);
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100vw;
+    height: 56.25vw;
+    min-height: 100vh;
+    min-width: 177.77vh;
+    transform: translate(-50%, -50%);
+}
+
+.logo-bar {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+}
+
+.logo-bar.transparent {
+    background: transparent;
+    box-shadow: none;
+    backdrop-filter: none;
+}
+
+.logo-bar.hidden-bar {
+    transform: translateY(-100%);
+    opacity: 0;
+}
+
+.logo-container-item {
+    transition: transform 0.3s ease;
+}
+
+.logo-container-item:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .video-container iframe {
+        min-height: 100vh;
+    }
+}

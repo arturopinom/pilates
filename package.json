@@ -1,0 +1,24 @@
+{
+  "name": "pilates-landing",
+  "version": "1.0.0",
+  "description": "Landing page moderna e inspiracional sobre Pilates",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve .",
+    "dev": "npx live-server --port=3000",
+    "deploy": "npx vercel --prod"
+  },
+  "keywords": [
+    "pilates",
+    "landing",
+    "fitness",
+    "wellness",
+    "react"
+  ],
+  "author": "Fundación La Cumbre",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tu-usuario/pilates-landing.git"
+  }
+}
