@@ -4,13 +4,32 @@ Landing page moderna e inspiracional sobre Pilates con diseño tipo Apple Fitnes
 
 ## 🎨 Características
 
-- **Hero con video de YouTube** en autoplay y loop
+- **Hero dinámico adaptativo**: Video en desktop, imagen estática en mobile (mejor UX)
 - **Diseño responsive** mobile-first (320px - 1440px+)
 - **Animaciones suaves** con transiciones CSS
 - **Barra superior inteligente** que aparece/desaparece con scroll
 - **Botones funcionales** con integración a Google Maps
 - **6 secciones completas** con contenido profesional
 - **Paleta de colores** elegante y minimalista
+- **Optimizado para rendimiento**: imágenes estáticas en mobile, video solo en desktop
+
+## 💡 Decisiones UX/UI Profesionales
+
+### ¿Por qué imagen en mobile y video en desktop?
+
+**Mobile (< 768px):**
+- ✅ **Carga más rápida** - Imagen estática vs iframe de YouTube
+- ✅ **Sin problemas de autoplay** - Los navegadores mobile bloquean autoplay con frecuencia
+- ✅ **Batería eficiente** - Videos consumen mucha batería en mobile
+- ✅ **Sin texto del video** - Elimina el problema de overlays de YouTube
+- ✅ **Experiencia limpia** - Imagen profesional de alta calidad
+
+**Desktop (> 768px):**
+- ✅ **Video inmersivo** - Mayor pantalla, mejor experiencia
+- ✅ **Controles disponibles** - Usuario puede pausar/reproducir
+- ✅ **Conexión más estable** - Desktop suele tener mejor internet
+
+Esta es la **misma estrategia** que usan Apple, Nike, Adidas y otras marcas premium.
 
 ## 📁 Estructura del Proyecto
 

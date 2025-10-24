@@ -142,33 +142,39 @@
                 padding: 0;
             }
             
+            /* Ocultar video en mobile - mejor UX */
             .video-container {
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100vh;
-                overflow: hidden;
+                display: none;
             }
             
-            .video-container iframe {
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                pointer-events: none;
-            }
-            
-            /* Asegurar que el hero ocupe toda la altura sin espacios */
+            /* Imagen de fondo estática profesional en mobile */
             section:first-of-type {
                 margin-top: 0 !important;
                 padding-top: 0 !important;
+                background-image: url('https://images.unsplash.com/photo-1518611012118-696072aa579a?w=1200&h=1600&fit=crop&q=90');
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
             }
             
             .hero-overlay {
-                background: linear-gradient(180deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.5) 100%);
+                background: linear-gradient(180deg, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0.45) 100%);
+            }
+            
+            /* Mejoras de legibilidad en mobile */
+            section:first-of-type h1 {
+                font-size: 2.5rem !important;
+                line-height: 1.1 !important;
+                text-shadow: 0 2px 20px rgba(0,0,0,0.5);
+            }
+            
+            section:first-of-type p {
+                font-size: 1.125rem !important;
+                text-shadow: 0 2px 15px rgba(0,0,0,0.5);
+            }
+            
+            section:first-of-type button {
+                box-shadow: 0 4px 20px rgba(12, 60, 120, 0.4);
             }
         }
     </style>
@@ -276,7 +282,7 @@
                     {/* YouTube Video Background */}
                     <div className="video-container">
                         <iframe
-                            src="https://www.youtube.com/embed/OCWxw3rFmlo?autoplay=1&mute=1&loop=1&playlist=OCWxw3rFmlo&controls=0&showinfo=0&modestbranding=1&rel=0&vq=hd1080"
+                            src="https://www.youtube.com/embed/OCWxw3rFmlo?autoplay=1&mute=1&loop=1&playlist=OCWxw3rFmlo&controls=1&showinfo=0&modestbranding=1&rel=0&vq=hd1080"
                             title="Pilates Video"
                             frameBorder="0"
                             allow="autoplay; encrypted-media"
