@@ -134,6 +134,11 @@
             transform: scale(1.05);
         }
         
+        /* Mobile video section - hidden on desktop */
+        .mobile-video-section {
+            display: none;
+        }
+        
         @media (max-width: 768px) {
             html, body {
                 overflow-x: hidden;
@@ -142,12 +147,17 @@
                 padding: 0;
             }
             
-            /* Ocultar video en mobile - mejor UX */
+            /* Mostrar sección de video en mobile */
+            .mobile-video-section {
+                display: block !important;
+            }
+            
+            /* Ocultar video del hero en mobile */
             .video-container {
                 display: none;
             }
             
-            /* Imagen de fondo estática profesional en mobile */
+            /* Imagen de fondo estática profesional en mobile para el hero */
             section:first-of-type {
                 margin-top: 0 !important;
                 padding-top: 0 !important;
@@ -308,6 +318,26 @@
                             >
                                 Descubre sus beneficios
                             </button>
+                        </div>
+                    </div>
+                </section>
+            );
+        };
+
+        // Mobile Video Section (only visible on mobile)
+        const MobileVideoSection = () => {
+            return (
+                <section className="mobile-video-section py-8 bg-gray-50 px-4">
+                    <div className="max-w-2xl mx-auto">
+                        <div className="relative rounded-2xl overflow-hidden shadow-2xl" style={{ paddingBottom: '56.25%', height: 0 }}>
+                            <iframe
+                                className="absolute top-0 left-0 w-full h-full"
+                                src="https://www.youtube.com/embed/OCWxw3rFmlo?rel=0&modestbranding=1&showinfo=0"
+                                title="Video Pilates"
+                                frameBorder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowFullScreen
+                            />
                         </div>
                     </div>
                 </section>
@@ -648,6 +678,7 @@
                 <div className="min-h-screen">
                     <TopLogoBar />
                     <HeroSection />
+                    <MobileVideoSection />
                     <WhatIsPilates />
                     <BenefitsSection />
                     <PilatesForEveryone />

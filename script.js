@@ -129,6 +129,26 @@ const HeroSection = () => {
     );
 };
 
+// Mobile Video Section (only visible on mobile)
+const MobileVideoSection = () => {
+    return (
+        <section className="mobile-video-section py-8 bg-gray-50 px-4">
+            <div className="max-w-2xl mx-auto">
+                <div className="relative rounded-2xl overflow-hidden shadow-2xl" style={{ paddingBottom: '56.25%', height: 0 }}>
+                    <iframe
+                        className="absolute top-0 left-0 w-full h-full"
+                        src="https://www.youtube.com/embed/OCWxw3rFmlo?rel=0&modestbranding=1&showinfo=0"
+                        title="Video Pilates"
+                        frameBorder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                    />
+                </div>
+            </div>
+        </section>
+    );
+};
+
 // What is Pilates Section
 const WhatIsPilates = () => {
     return (
@@ -463,6 +483,7 @@ const App = () => {
         <div className="min-h-screen">
             <TopLogoBar />
             <HeroSection />
+            <MobileVideoSection />
             <WhatIsPilates />
             <BenefitsSection />
             <PilatesForEveryone />

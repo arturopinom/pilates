@@ -119,6 +119,11 @@ body {
     transform: scale(1.05);
 }
 
+/* Mobile video section - hidden on desktop */
+.mobile-video-section {
+    display: none;
+}
+
 @media (max-width: 768px) {
     html, body {
         overflow-x: hidden;
@@ -127,12 +132,17 @@ body {
         padding: 0;
     }
     
-    /* Ocultar video en mobile - mejor UX */
+    /* Mostrar sección de video en mobile */
+    .mobile-video-section {
+        display: block !important;
+    }
+    
+    /* Ocultar video del hero en mobile */
     .video-container {
         display: none;
     }
     
-    /* Imagen de fondo estática profesional en mobile */
+    /* Imagen de fondo estática profesional en mobile para el hero */
     section:first-of-type {
         margin-top: 0 !important;
         padding-top: 0 !important;

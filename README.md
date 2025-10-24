@@ -15,21 +15,31 @@ Landing page moderna e inspiracional sobre Pilates con diseño tipo Apple Fitnes
 
 ## 💡 Decisiones UX/UI Profesionales
 
-### ¿Por qué imagen en mobile y video en desktop?
+### Estrategia de Video Adaptativa
 
 **Mobile (< 768px):**
-- ✅ **Carga más rápida** - Imagen estática vs iframe de YouTube
-- ✅ **Sin problemas de autoplay** - Los navegadores mobile bloquean autoplay con frecuencia
-- ✅ **Batería eficiente** - Videos consumen mucha batería en mobile
-- ✅ **Sin texto del video** - Elimina el problema de overlays de YouTube
-- ✅ **Experiencia limpia** - Imagen profesional de alta calidad
+- ✅ **Hero limpio con imagen** - Primera impresión profesional sin distracciones
+- ✅ **Video accesible debajo** - Usuario puede ver el video scrolleando, en tamaño controlado
+- ✅ **Carga rápida** - Hero con imagen estática carga instantáneo
+- ✅ **Sin problemas de autoplay** - El video en sección dedicada no interfiere
+- ✅ **Experiencia intuitiva** - El usuario decide cuándo ver el video
+- ✅ **Video con controles** - Usuario puede pausar, ver en fullscreen, etc.
 
 **Desktop (> 768px):**
-- ✅ **Video inmersivo** - Mayor pantalla, mejor experiencia
-- ✅ **Controles disponibles** - Usuario puede pausar/reproducir
-- ✅ **Conexión más estable** - Desktop suele tener mejor internet
+- ✅ **Video inmersivo en hero** - Pantalla completa con overlay elegante
+- ✅ **Autoplay con loop** - Experiencia cinematográfica
+- ✅ **Controles disponibles** - Usuario puede pausar/reproducir/ajustar volumen
+- ✅ **HD 1080p** - Máxima calidad visual
 
-Esta es la **misma estrategia** que usan Apple, Nike, Adidas y otras marcas premium.
+### ¿Por qué esta estrategia?
+
+Esta solución combina lo mejor de ambos mundos:
+1. **Hero profesional** en mobile (imagen estática)
+2. **Video accesible** justo debajo (el usuario scrollea 1 segundo y lo ve)
+3. **Mejor rendimiento** - La página carga rápido
+4. **Control del usuario** - Decide cuándo interactuar con el video
+
+Es la estrategia que usan sitios premium como **Peloton**, **Lululemon** y **ClassPass**.
 
 ## 📁 Estructura del Proyecto
 
