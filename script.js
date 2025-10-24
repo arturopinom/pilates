@@ -97,7 +97,7 @@ const HeroSection = () => {
             {/* YouTube Video Background */}
             <div className="video-container">
                 <iframe
-                    src="https://www.youtube.com/embed/OCWxw3rFmlo?autoplay=1&mute=1&loop=1&playlist=OCWxw3rFmlo&controls=1&showinfo=0&modestbranding=1&rel=0"
+                    src="https://www.youtube.com/embed/OCWxw3rFmlo?autoplay=1&mute=1&loop=1&playlist=OCWxw3rFmlo&controls=0&showinfo=0&modestbranding=1&rel=0&vq=hd1080"
                     title="Pilates Video"
                     frameBorder="0"
                     allow="autoplay; encrypted-media"
