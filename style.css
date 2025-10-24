@@ -120,7 +120,18 @@ body {
 }
 
 @media (max-width: 768px) {
+    .video-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+    }
+    
     .video-container iframe {
+        width: 100vw;
+        height: 177.77vw;
         min-height: 100vh;
+        min-width: 100vw;
     }
 }
