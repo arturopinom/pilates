@@ -124,6 +124,31 @@ body {
     display: none;
 }
 
+/* Swiper styles for mobile */
+.swiper-container {
+    width: 100%;
+    padding: 20px 0 40px 0;
+}
+
+.swiper-pagination-bullet {
+    background: #0C3C78;
+    opacity: 0.5;
+}
+
+.swiper-pagination-bullet-active {
+    opacity: 1;
+    background: #31B977;
+}
+
+/* Hide swiper on desktop, show grid */
+.desktop-grid {
+    display: grid;
+}
+
+.mobile-swiper {
+    display: none;
+}
+
 @media (max-width: 768px) {
     html, body {
         overflow-x: hidden;
@@ -134,6 +159,15 @@ body {
     
     /* Mostrar sección de video en mobile */
     .mobile-video-section {
+        display: block !important;
+    }
+    
+    /* Show swiper on mobile, hide grid */
+    .desktop-grid {
+        display: none !important;
+    }
+    
+    .mobile-swiper {
         display: block !important;
     }
     

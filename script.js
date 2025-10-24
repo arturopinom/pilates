@@ -214,6 +214,20 @@ const BenefitsSection = () => {
         }
     ];
 
+    useEffect(() => {
+        if (window.innerWidth <= 768) {
+            new Swiper('.benefits-swiper', {
+                slidesPerView: 1.2,
+                spaceBetween: 20,
+                centeredSlides: false,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+            });
+        }
+    }, []);
+
     return (
         <section id="beneficios" className="py-20 md:py-32 bg-gray-50 px-4 sm:px-6 lg:px-8">
             <div className="max-w-7xl mx-auto">
@@ -226,7 +240,8 @@ const BenefitsSection = () => {
                     </p>
                 </div>
                 
-                <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                {/* Desktop Grid */}
+                <div className="desktop-grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
                     {benefits.map((benefit, index) => (
                         <div 
                             key={index}
@@ -244,6 +259,30 @@ const BenefitsSection = () => {
                         </div>
                     ))}
                 </div>
+
+                {/* Mobile Swiper */}
+                <div className="mobile-swiper">
+                    <div className="swiper benefits-swiper">
+                        <div className="swiper-wrapper">
+                            {benefits.map((benefit, index) => (
+                                <div key={index} className="swiper-slide">
+                                    <div className="bg-white p-8 rounded-2xl shadow-lg h-full">
+                                        <div className="w-16 h-16 mb-6 text-blue-900">
+                                            {benefit.icon}
+                                        </div>
+                                        <h3 className="font-dm font-bold text-2xl text-gray-900 mb-3">
+                                            {benefit.title}
+                                        </h3>
+                                        <p className="font-inter text-gray-600 leading-relaxed">
+                                            {benefit.description}
+                                        </p>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+                        <div className="swiper-pagination"></div>
+                    </div>
+                </div>
             </div>
         </section>
     );
@@ -251,6 +290,43 @@ const BenefitsSection = () => {
 
 // Pilates for Everyone
 const PilatesForEveryone = () => {
+    const people = [
+        {
+            image: "https://images.unsplash.com/photo-1518611012118-696072aa579a?w=600&h=800&fit=crop",
+            title: "Para todos los niveles",
+            alt: "Principiantes en clase de Pilates"
+        },
+        {
+            image: "https://images.unsplash.com/photo-1594737626072-90dc274bc2bd?w=600&h=800&fit=crop",
+            title: "Todas las edades",
+            alt: "Adultos mayores practicando Pilates"
+        },
+        {
+            image: "https://images.unsplash.com/photo-1576678927484-cc907957088c?w=600&h=800&fit=crop",
+            title: "Rehabilitación",
+            alt: "Rehabilitación con Pilates terapéutico"
+        },
+        {
+            image: "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=600&h=800&fit=crop",
+            title: "Rendimiento atlético",
+            alt: "Atletas entrenando con Pilates"
+        }
+    ];
+
+    useEffect(() => {
+        if (window.innerWidth <= 768) {
+            new Swiper('.everyone-swiper', {
+                slidesPerView: 1.5,
+                spaceBetween: 16,
+                centeredSlides: true,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+            });
+        }
+    }, []);
+
     return (
         <section className="py-20 md:py-32 bg-white px-4 sm:px-6 lg:px-8">
             <div className="max-w-7xl mx-auto">
@@ -263,46 +339,42 @@ const PilatesForEveryone = () => {
                     </p>
                 </div>
                 
-                <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                    <div className="relative h-80 rounded-2xl overflow-hidden shadow-xl card-hover">
-                        <img 
-                            src="https://images.unsplash.com/photo-1518611012118-696072aa579a?w=600&h=800&fit=crop" 
-                            alt="Principiantes en clase de Pilates" 
-                            className="w-full h-full object-cover"
-                        />
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end">
-                            <p className="text-white font-dm font-bold text-xl p-6">Para todos los niveles</p>
+                {/* Desktop Grid */}
+                <div className="desktop-grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    {people.map((person, index) => (
+                        <div key={index} className="relative h-80 rounded-2xl overflow-hidden shadow-xl card-hover">
+                            <img 
+                                src={person.image} 
+                                alt={person.alt} 
+                                className="w-full h-full object-cover"
+                            />
+                            <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end">
+                                <p className="text-white font-dm font-bold text-xl p-6">{person.title}</p>
+                            </div>
                         </div>
-                    </div>
-                    <div className="relative h-80 rounded-2xl overflow-hidden shadow-xl card-hover">
-                        <img 
-                            src="https://images.unsplash.com/photo-1594737626072-90dc274bc2bd?w=600&h=800&fit=crop" 
-                            alt="Adultos mayores practicando Pilates" 
-                            className="w-full h-full object-cover"
-                        />
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end">
-                            <p className="text-white font-dm font-bold text-xl p-6">Todas las edades</p>
+                    ))}
+                </div>
+
+                {/* Mobile Swiper */}
+                <div className="mobile-swiper">
+                    <div className="swiper everyone-swiper">
+                        <div className="swiper-wrapper">
+                            {people.map((person, index) => (
+                                <div key={index} className="swiper-slide">
+                                    <div className="relative h-96 rounded-2xl overflow-hidden shadow-xl">
+                                        <img 
+                                            src={person.image} 
+                                            alt={person.alt} 
+                                            className="w-full h-full object-cover"
+                                        />
+                                        <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end">
+                                            <p className="text-white font-dm font-bold text-xl p-6">{person.title}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            ))}
                         </div>
-                    </div>
-                    <div className="relative h-80 rounded-2xl overflow-hidden shadow-xl card-hover">
-                        <img 
-                            src="https://images.unsplash.com/photo-1576678927484-cc907957088c?w=600&h=800&fit=crop" 
-                            alt="Rehabilitación con Pilates terapéutico" 
-                            className="w-full h-full object-cover"
-                        />
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end">
-                            <p className="text-white font-dm font-bold text-xl p-6">Rehabilitación</p>
-                        </div>
-                    </div>
-                    <div className="relative h-80 rounded-2xl overflow-hidden shadow-xl card-hover">
-                        <img 
-                            src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=600&h=800&fit=crop" 
-                            alt="Atletas entrenando con Pilates" 
-                            className="w-full h-full object-cover"
-                        />
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end">
-                            <p className="text-white font-dm font-bold text-xl p-6">Rendimiento atlético</p>
-                        </div>
+                        <div className="swiper-pagination"></div>
                     </div>
                 </div>
             </div>
@@ -335,6 +407,20 @@ const TypesOfPractice = () => {
         }
     ];
 
+    useEffect(() => {
+        if (window.innerWidth <= 768) {
+            new Swiper('.types-swiper', {
+                slidesPerView: 1.1,
+                spaceBetween: 20,
+                centeredSlides: false,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+            });
+        }
+    }, []);
+
     return (
         <section className="py-20 md:py-32 bg-gray-50 px-4 sm:px-6 lg:px-8">
             <div className="max-w-7xl mx-auto">
@@ -347,7 +433,8 @@ const TypesOfPractice = () => {
                     </p>
                 </div>
                 
-                <div className="grid md:grid-cols-2 gap-8">
+                {/* Desktop Grid */}
+                <div className="desktop-grid md:grid-cols-2 gap-8">
                     {types.map((type, index) => (
                         <div 
                             key={index}
@@ -370,6 +457,36 @@ const TypesOfPractice = () => {
                             </div>
                         </div>
                     ))}
+                </div>
+
+                {/* Mobile Swiper */}
+                <div className="mobile-swiper">
+                    <div className="swiper types-swiper">
+                        <div className="swiper-wrapper">
+                            {types.map((type, index) => (
+                                <div key={index} className="swiper-slide">
+                                    <div className="bg-white rounded-2xl overflow-hidden shadow-xl h-full">
+                                        <div className="relative h-64 overflow-hidden">
+                                            <img 
+                                                src={type.image} 
+                                                alt={type.title}
+                                                className="w-full h-full object-cover"
+                                            />
+                                        </div>
+                                        <div className="p-8">
+                                            <h3 className="font-dm font-bold text-2xl text-gray-900 mb-4">
+                                                {type.title}
+                                            </h3>
+                                            <p className="font-inter text-gray-600 leading-relaxed">
+                                                {type.description}
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+                        <div className="swiper-pagination"></div>
+                    </div>
                 </div>
             </div>
         </section>

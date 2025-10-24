@@ -5,6 +5,7 @@ Landing page moderna e inspiracional sobre Pilates con diseño tipo Apple Fitnes
 ## 🎨 Características
 
 - **Hero dinámico adaptativo**: Video en desktop, imagen estática en mobile (mejor UX)
+- **Swiper carruseles en mobile**: Navegación horizontal intuitiva tipo Instagram/Netflix
 - **Diseño responsive** mobile-first (320px - 1440px+)
 - **Animaciones suaves** con transiciones CSS
 - **Barra superior inteligente** que aparece/desaparece con scroll
@@ -12,6 +13,27 @@ Landing page moderna e inspiracional sobre Pilates con diseño tipo Apple Fitnes
 - **6 secciones completas** con contenido profesional
 - **Paleta de colores** elegante y minimalista
 - **Optimizado para rendimiento**: imágenes estáticas en mobile, video solo en desktop
+
+## 📱 Experiencia Mobile Premium
+
+### Swiper Carruseles (< 768px)
+
+**Secciones con Swiper:**
+1. ✅ **Beneficios** - 6 tarjetas deslizables (slidesPerView: 1.2)
+2. ✅ **Pilates para todos** - 4 imágenes con efecto centrado (slidesPerView: 1.5)
+3. ✅ **Tipos de práctica** - 4 cards horizontales (slidesPerView: 1.1)
+
+**Ventajas UX:**
+- 🎯 **Menos scroll vertical** - Contenido más accesible
+- 👆 **Interacción natural** - Gestos de swipe familiares
+- 📱 **Moderna** - Experiencia tipo app nativa
+- 🎨 **Limpia** - Evita el efecto "lista infinita"
+- 💚 **Bullets de navegación** - Usuario sabe cuántas cards hay
+
+### Desktop Experience (> 768px)
+- Grid tradicional profesional
+- Hover effects y transiciones
+- Distribución óptima del espacio
 
 ## 💡 Decisiones UX/UI Profesionales
 
@@ -114,6 +136,7 @@ vercel
 - **CSS3** - Estilos y animaciones
 - **React 18** - Componentes UI
 - **Tailwind CSS** - Utilidades de diseño
+- **Swiper.js 11** - Carruseles touch en mobile
 - **Google Fonts** - Inter & DM Sans
 
 ## 📱 Responsive
