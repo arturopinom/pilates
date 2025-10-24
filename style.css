@@ -120,6 +120,12 @@ body {
 }
 
 @media (max-width: 768px) {
+    html, body {
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+    }
+    
     .video-container {
         position: absolute;
         top: 0;
@@ -140,5 +146,15 @@ body {
         min-width: 100vw;
         min-height: 56.25vw;
         transform: translate(-50%, -50%);
+    }
+    
+    /* Asegurar que el hero ocupe toda la altura sin espacios */
+    section:first-of-type {
+        margin-top: 0 !important;
+        padding-top: 0 !important;
+    }
+    
+    .hero-overlay {
+        background: linear-gradient(180deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.5) 100%);
     }
 }

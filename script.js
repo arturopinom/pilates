@@ -449,21 +449,6 @@ const Footer = () => {
                     </p>
                 </div>
                 
-                <div className="flex justify-center space-x-8 mb-8">
-                    <a href="#" className="text-gray-600 hover:text-blue-900 transition-colors font-inter text-sm tracking-wide">
-                        Sobre nosotros
-                    </a>
-                    <a href="#" className="text-gray-600 hover:text-blue-900 transition-colors font-inter text-sm tracking-wide">
-                        Programas
-                    </a>
-                    <a href="#" className="text-gray-600 hover:text-blue-900 transition-colors font-inter text-sm tracking-wide">
-                        Contacto
-                    </a>
-                    <a href="#" className="text-gray-600 hover:text-blue-900 transition-colors font-inter text-sm tracking-wide">
-                        Certificaciones
-                    </a>
-                </div>
-                
                 <div className="text-center text-gray-500 text-sm font-inter tracking-wide">
                     © 2025 Pilates. Todos los derechos reservados.
                 </div>
