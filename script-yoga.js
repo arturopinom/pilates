@@ -6,7 +6,6 @@ const TopLogoBar = () => {
 
     useEffect(() => {
         const handleScroll = () => {
-            // Show bar after scrolling 100px
             setIsScrolled(window.scrollY > 100);
         };
 
@@ -55,9 +54,9 @@ const Icons = {
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
         </svg>
     ),
-    Target: () => (
+    Sun: () => (
         <svg className="w-full h-full" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm0-14c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6zm0 10c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4z" />
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
         </svg>
     ),
     Wind: () => (
@@ -97,8 +96,8 @@ const HeroSection = () => {
             {/* YouTube Video Background */}
             <div className="video-container">
                 <iframe
-                    src="https://www.youtube.com/embed/OCWxw3rFmlo?autoplay=0&mute=0&loop=1&playlist=OCWxw3rFmlo&controls=1&showinfo=0&modestbranding=1&rel=0&vq=hd1080"
-                    title="Pilates Video"
+                    src="https://www.youtube.com/embed/v7AYKMP6rOE?autoplay=0&mute=0&loop=1&playlist=v7AYKMP6rOE&controls=1&showinfo=0&modestbranding=1&rel=0&vq=hd1080"
+                    title="Yoga Video"
                     frameBorder="0"
                     allow="autoplay; encrypted-media"
                     allowFullScreen
@@ -112,14 +111,14 @@ const HeroSection = () => {
             <div className="relative h-full flex items-center justify-center px-4 sm:px-6 lg:px-8">
                 <div className={`text-center text-white max-w-4xl mx-auto ${isVisible ? 'animate-fade-in' : ''}`}>
                     <h1 className="font-dm font-extrabold text-4xl sm:text-5xl md:text-6xl lg:text-7xl mb-6 tracking-tight uppercase leading-tight">
-                        Pilates: el movimiento<br />que transforma
+                        Yoga: encuentra tu<br />equilibrio interior
                     </h1>
                     <p className="font-inter text-lg sm:text-xl md:text-2xl mb-10 font-light tracking-wide opacity-95">
-                        Fuerza, control y equilibrio para cuerpo y mente
+                        Armonía entre cuerpo, mente y espíritu
                     </p>
                     <button 
                         onClick={handleDiscoverBenefits}
-                        className="btn-primary bg-gradient-to-r from-blue-900 to-blue-700 text-white px-10 py-4 rounded-full text-lg font-semibold tracking-wide hover:from-blue-800 hover:to-blue-600"
+                        className="btn-primary bg-gradient-to-r from-purple-900 to-purple-700 text-white px-10 py-4 rounded-full text-lg font-semibold tracking-wide hover:from-purple-800 hover:to-purple-600"
                     >
                         Descubre sus beneficios
                     </button>
@@ -129,7 +128,7 @@ const HeroSection = () => {
     );
 };
 
-// Mobile Video Section (only visible on mobile)
+// Mobile Video Section
 const MobileVideoSection = () => {
     return (
         <section className="mobile-video-section py-8 bg-gray-50 px-4">
@@ -137,8 +136,8 @@ const MobileVideoSection = () => {
                 <div className="relative rounded-2xl overflow-hidden shadow-2xl" style={{ paddingBottom: '56.25%', height: 0 }}>
                     <iframe
                         className="absolute top-0 left-0 w-full h-full"
-                        src="https://www.youtube.com/embed/OCWxw3rFmlo?rel=0&modestbranding=1&showinfo=0"
-                        title="Video Pilates"
+                        src="https://www.youtube.com/embed/v7AYKMP6rOE?rel=0&modestbranding=1&showinfo=0"
+                        title="Video Yoga"
                         frameBorder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowFullScreen
@@ -149,27 +148,27 @@ const MobileVideoSection = () => {
     );
 };
 
-// What is Pilates Section
-const WhatIsPilates = () => {
+// What is Yoga Section
+const WhatIsYoga = () => {
     return (
-        <section id="que-es-pilates" className="py-20 md:py-32 bg-white px-4 sm:px-6 lg:px-8">
+        <section id="que-es-yoga" className="py-20 md:py-32 bg-white px-4 sm:px-6 lg:px-8">
             <div className="max-w-7xl mx-auto">
                 <div className="grid md:grid-cols-2 gap-12 items-center">
                     <div className="space-y-6">
                         <h2 className="font-dm font-bold text-4xl md:text-5xl text-gray-900 tracking-tight">
-                            ¿Qué es el Pilates?
+                            ¿Qué es el Yoga?
                         </h2>
                         <p className="font-inter text-lg md:text-xl text-gray-700 leading-relaxed">
-                            Un entrenamiento que conecta respiración, energía y consciencia. Pilates es mucho más que ejercicio: es una práctica que fortalece tu cuerpo desde el centro, mejorando tu postura, flexibilidad y bienestar mental.
+                            Una práctica milenaria que une cuerpo, mente y espíritu. El Yoga es mucho más que posturas: es un camino hacia el autoconocimiento, la paz interior y el bienestar integral.
                         </p>
                         <p className="font-inter text-lg md:text-xl text-gray-700 leading-relaxed">
-                            Cada movimiento está diseñado para construir fuerza funcional y crear armonía entre tu mente y tu cuerpo.
+                            A través de la respiración consciente, meditación y asanas, el Yoga te ayuda a encontrar equilibrio, reducir el estrés y conectar con tu esencia.
                         </p>
                     </div>
                     <div className="relative h-96 md:h-full min-h-96 rounded-2xl overflow-hidden shadow-2xl">
                         <img 
-                            src="https://images.unsplash.com/photo-1603988363607-e1e4a66962c6?w=800&h=1000&fit=crop" 
-                            alt="Persona practicando Pilates con consciencia y control" 
+                            src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=800&h=1000&fit=crop" 
+                            alt="Persona meditando en posición de loto" 
                             className="w-full h-full object-cover"
                         />
                     </div>
@@ -183,34 +182,34 @@ const WhatIsPilates = () => {
 const BenefitsSection = () => {
     const benefits = [
         {
+            icon: <Icons.Heart />,
+            title: "Paz Mental",
+            description: "Reduce el estrés y la ansiedad a través de la meditación y respiración consciente"
+        },
+        {
             icon: <Icons.Activity />,
-            title: "Postura",
-            description: "Alinea tu columna y mejora tu postura diaria con ejercicios específicos"
-        },
-        {
-            icon: <Icons.Target />,
-            title: "Fuerza",
-            description: "Desarrolla fuerza profunda desde tu core hacia todo el cuerpo"
-        },
-        {
-            icon: <Icons.Wind />,
             title: "Flexibilidad",
-            description: "Aumenta tu rango de movimiento con estiramientos controlados"
+            description: "Mejora tu rango de movimiento y previene lesiones con práctica regular"
+        },
+        {
+            icon: <Icons.Sun />,
+            title: "Energía Vital",
+            description: "Aumenta tu vitalidad y energía con la circulación del prana"
         },
         {
             icon: <Icons.Brain />,
-            title: "Concentración",
-            description: "Entrena tu mente mientras fortaleces tu cuerpo con precisión"
+            title: "Claridad Mental",
+            description: "Desarrolla concentración y presencia plena en cada momento"
         },
         {
             icon: <Icons.Scale />,
             title: "Equilibrio",
-            description: "Mejora tu estabilidad y coordinación en cada movimiento"
+            description: "Encuentra armonía física, mental y emocional en tu vida diaria"
         },
         {
-            icon: <Icons.Heart />,
-            title: "Bienestar mental",
-            description: "Reduce el estrés y encuentra calma a través del movimiento consciente"
+            icon: <Icons.Wind />,
+            title: "Respiración",
+            description: "Aprende técnicas de pranayama para calmar la mente y energizar el cuerpo"
         }
     ];
 
@@ -233,10 +232,10 @@ const BenefitsSection = () => {
             <div className="max-w-7xl mx-auto">
                 <div className="text-center mb-16">
                     <h2 className="font-dm font-bold text-4xl md:text-5xl text-gray-900 mb-4">
-                        Beneficios transformadores
+                        Beneficios del Yoga
                     </h2>
                     <p className="font-inter text-xl text-gray-600 max-w-2xl mx-auto">
-                        Descubre cómo Pilates puede mejorar cada aspecto de tu vida
+                        Transforma tu vida con una práctica milenaria
                     </p>
                 </div>
                 
@@ -247,7 +246,7 @@ const BenefitsSection = () => {
                             key={index}
                             className="card-hover bg-white p-8 rounded-2xl shadow-lg group"
                         >
-                            <div className="icon-container w-16 h-16 mb-6 text-blue-900 group-hover:text-green-500">
+                            <div className="icon-container w-16 h-16 mb-6 text-purple-900 group-hover:text-orange-500">
                                 {benefit.icon}
                             </div>
                             <h3 className="font-dm font-bold text-2xl text-gray-900 mb-3">
@@ -267,7 +266,7 @@ const BenefitsSection = () => {
                             {benefits.map((benefit, index) => (
                                 <div key={index} className="swiper-slide">
                                     <div className="bg-white p-8 rounded-2xl shadow-lg h-full">
-                                        <div className="w-16 h-16 mb-6 text-blue-900">
+                                        <div className="w-16 h-16 mb-6 text-purple-900">
                                             {benefit.icon}
                                         </div>
                                         <h3 className="font-dm font-bold text-2xl text-gray-900 mb-3">
@@ -288,28 +287,28 @@ const BenefitsSection = () => {
     );
 };
 
-// Pilates for Everyone
-const PilatesForEveryone = () => {
+// Yoga for Everyone
+const YogaForEveryone = () => {
     const people = [
         {
-            image: "https://images.unsplash.com/photo-1518611012118-696072aa579a?w=600&h=800&fit=crop",
-            title: "Para todos los niveles",
-            alt: "Principiantes en clase de Pilates"
+            image: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=600&h=800&fit=crop",
+            title: "Principiantes",
+            alt: "Persona comenzando su práctica de Yoga"
         },
         {
-            image: "https://images.unsplash.com/photo-1594737626072-90dc274bc2bd?w=600&h=800&fit=crop",
+            image: "https://images.unsplash.com/photo-1593811167562-9cef47bfc4d7?w=600&h=800&fit=crop",
             title: "Todas las edades",
-            alt: "Adultos mayores practicando Pilates"
+            alt: "Adultos mayores practicando Yoga"
         },
         {
-            image: "https://images.unsplash.com/photo-1576678927484-cc907957088c?w=600&h=800&fit=crop",
-            title: "Rehabilitación",
-            alt: "Rehabilitación con Pilates terapéutico"
+            image: "https://images.unsplash.com/photo-1599901860904-17e6ed7083a0?w=600&h=800&fit=crop",
+            title: "Recuperación",
+            alt: "Yoga terapéutico y restaurativo"
         },
         {
-            image: "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=600&h=800&fit=crop",
-            title: "Rendimiento atlético",
-            alt: "Atletas entrenando con Pilates"
+            image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&h=800&fit=crop",
+            title: "Atletas",
+            alt: "Deportistas complementando con Yoga"
         }
     ];
 
@@ -332,10 +331,10 @@ const PilatesForEveryone = () => {
             <div className="max-w-7xl mx-auto">
                 <div className="text-center mb-16">
                     <h2 className="font-dm font-bold text-4xl md:text-5xl text-gray-900 mb-6">
-                        Pilates para todos
+                        Yoga para todos
                     </h2>
                     <p className="font-inter text-2xl gradient-text font-semibold">
-                        Una disciplina inclusiva que mejora vidas
+                        Una práctica universal para cada persona
                     </p>
                 </div>
                 
@@ -386,23 +385,23 @@ const PilatesForEveryone = () => {
 const TypesOfPractice = () => {
     const types = [
         {
-            title: "Pilates Mat",
-            description: "Ejercicios en suelo con tu propio peso corporal. Perfecto para comenzar y desarrollar fuerza fundamental.",
+            title: "Hatha Yoga",
+            description: "El estilo clásico y fundamental. Ideal para principiantes, enfoca en posturas básicas y respiración.",
+            image: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=800&h=600&fit=crop"
+        },
+        {
+            title: "Vinyasa Flow",
+            description: "Secuencias dinámicas que sincronizan movimiento y respiración. Energizante y fluido.",
+            image: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=800&h=600&fit=crop"
+        },
+        {
+            title: "Yin Yoga",
+            description: "Posturas pasivas mantenidas por varios minutos. Profundamente relajante y meditativo.",
             image: "https://images.unsplash.com/photo-1599901860904-17e6ed7083a0?w=800&h=600&fit=crop"
         },
         {
-            title: "Pilates Reformer",
-            description: "Utiliza una máquina con resistencias ajustables para un entrenamiento más intenso y versátil.",
-            image: "https://images.unsplash.com/photo-1518611012118-696072aa579a?w=800&h=600&fit=crop"
-        },
-        {
-            title: "Pilates Clínico",
-            description: "Enfoque terapéutico para rehabilitación, lesiones y condiciones especiales bajo supervisión.",
-            image: "https://images.unsplash.com/photo-1576678927484-cc907957088c?w=800&h=600&fit=crop"
-        },
-        {
-            title: "Pilates Deportivo",
-            description: "Optimizado para atletas y personas activas que buscan mejorar rendimiento y prevenir lesiones.",
+            title: "Ashtanga Yoga",
+            description: "Serie estructurada de posturas desafiantes. Para practicantes que buscan disciplina e intensidad.",
             image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&h=600&fit=crop"
         }
     ];
@@ -426,10 +425,10 @@ const TypesOfPractice = () => {
             <div className="max-w-7xl mx-auto">
                 <div className="text-center mb-16">
                     <h2 className="font-dm font-bold text-4xl md:text-5xl text-gray-900 mb-4">
-                        Tipos de práctica
+                        Estilos de Yoga
                     </h2>
                     <p className="font-inter text-xl text-gray-600 max-w-2xl mx-auto">
-                        Encuentra el estilo que mejor se adapta a tus objetivos
+                        Encuentra el camino que resuena con tu espíritu
                     </p>
                 </div>
                 
@@ -496,11 +495,11 @@ const TypesOfPractice = () => {
 // Start Today Section
 const StartToday = () => {
     const handleFindCenter = () => {
-        window.open('https://www.google.com/maps/search/centros+de+pilates+cerca+de+mi/', '_blank');
+        window.open('https://www.google.com/maps/search/centros+de+yoga+cerca+de+mi/', '_blank');
     };
 
     const handleExploreMore = () => {
-        const whatIsSection = document.querySelector('#que-es-pilates');
+        const whatIsSection = document.querySelector('#que-es-yoga');
         if (whatIsSection) {
             whatIsSection.scrollIntoView({ behavior: 'smooth' });
         }
@@ -510,8 +509,8 @@ const StartToday = () => {
         <section className="relative py-32 md:py-40 overflow-hidden">
             <div className="absolute inset-0">
                 <img 
-                    src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=1920&h=1080&fit=crop" 
-                    alt="Persona meditando en posición de equilibrio" 
+                    src="https://images.unsplash.com/photo-1588286840104-8957b019727f?w=1920&h=1080&fit=crop" 
+                    alt="Persona meditando al amanecer" 
                     className="w-full h-full object-cover"
                 />
                 <div className="hero-overlay absolute inset-0" />
@@ -519,15 +518,15 @@ const StartToday = () => {
             
             <div className="relative max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
                 <h2 className="font-dm font-extrabold text-4xl md:text-6xl text-white mb-8 tracking-tight">
-                    Muévete. Respira.<br />Encuentra tu equilibrio.
+                    Respira. Medita.<br />Encuentra tu paz.
                 </h2>
                 <p className="font-inter text-xl md:text-2xl text-white/90 mb-12 font-light">
-                    Tu transformación comienza con un solo movimiento
+                    Tu viaje hacia el bienestar comienza ahora
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                     <button 
                         onClick={handleFindCenter}
-                        className="btn-primary bg-white text-blue-900 px-10 py-4 rounded-full text-lg font-semibold tracking-wide hover:bg-gray-100"
+                        className="btn-primary bg-white text-purple-900 px-10 py-4 rounded-full text-lg font-semibold tracking-wide hover:bg-gray-100"
                     >
                         Encuentra un centro cercano
                     </button>
@@ -579,15 +578,15 @@ const Footer = () => {
                 
                 <div className="text-center mb-8">
                     <h3 className="font-dm font-bold text-2xl text-gray-900 mb-2">
-                        Pilates
+                        Yoga
                     </h3>
                     <p className="font-inter text-gray-600 tracking-wide">
-                        Movimiento y bienestar para todos
+                        Bienestar y equilibrio para todos
                     </p>
                 </div>
                 
                 <div className="text-center text-gray-500 text-sm font-inter tracking-wide">
-                    © 2025 Pilates. Todos los derechos reservados.
+                    © 2025 Yoga. Todos los derechos reservados.
                 </div>
             </div>
         </footer>
@@ -601,9 +600,9 @@ const App = () => {
             <TopLogoBar />
             <HeroSection />
             <MobileVideoSection />
-            <WhatIsPilates />
+            <WhatIsYoga />
             <BenefitsSection />
-            <PilatesForEveryone />
+            <YogaForEveryone />
             <TypesOfPractice />
             <StartToday />
             <Footer />

@@ -53,7 +53,7 @@ body {
 
 .btn-primary:hover {
     transform: translateY(-2px);
-    box-shadow: 0 12px 24px rgba(12, 60, 120, 0.3);
+    box-shadow: 0 12px 24px rgba(107, 33, 168, 0.3);
 }
 
 .parallax-section {
@@ -61,7 +61,7 @@ body {
 }
 
 .gradient-text {
-    background: linear-gradient(135deg, #0C3C78 0%, #31B977 100%);
+    background: linear-gradient(135deg, #6B21A8 0%, #F97316 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -130,13 +130,13 @@ body {
 }
 
 .swiper-pagination-bullet {
-    background: #0C3C78;
+    background: #6B21A8;
     opacity: 0.5;
 }
 
 .swiper-pagination-bullet-active {
     opacity: 1;
-    background: #31B977;
+    background: #F97316;
 }
 
 /* Hide swiper on desktop, show grid */
@@ -202,6 +202,6 @@ body {
     }
     
     section:first-of-type button {
-        box-shadow: 0 4px 20px rgba(12, 60, 120, 0.4);
+        box-shadow: 0 4px 20px rgba(107, 33, 168, 0.4);
     }
 }
