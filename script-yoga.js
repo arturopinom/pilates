@@ -108,8 +108,8 @@ const HeroSection = () => {
             <div className="hero-overlay absolute inset-0" />
             
             {/* Content */}
-            <div className="relative h-full flex items-center justify-center px-4 sm:px-6 lg:px-8">
-                <div className={`text-center text-white max-w-4xl mx-auto ${isVisible ? 'animate-fade-in' : ''}`}>
+            <div className="relative h-full flex items-center justify-center px-4 sm:px-6 lg:px-8" style={{pointerEvents: 'none'}}>
+                <div className={`text-center text-white max-w-4xl mx-auto ${isVisible ? 'animate-fade-in' : ''}`} style={{pointerEvents: 'auto'}}>
                     <h1 className="font-dm font-extrabold text-4xl sm:text-5xl md:text-6xl lg:text-7xl mb-6 tracking-tight uppercase leading-tight">
                         Yoga: encuentra tu<br />equilibrio interior
                     </h1>
