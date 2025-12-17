@@ -556,7 +556,7 @@ const Footer = () => {
                         </p>
                         <a href="http://www.fundacionlacumbre.cl/" target="_blank" rel="noopener noreferrer" className="inline-block">
                             <img 
-                                src="https://www.energyclub.cl/img/cms/LEY_DEL_DEPORTE/LOGOLACUMBRE.png" 
+                                src="https://www.practicayoga.cl/logo-fundacion-la-cumbre.png" 
                                 alt="Fundación La Cumbre" 
                                 className="h-16 sm:h-20 w-auto object-contain mx-auto sm:ml-auto hover:opacity-80 transition-opacity"
                             />
@@ -569,7 +569,7 @@ const Footer = () => {
                         </p>
                         <a href="http://www.mindep.cl/" target="_blank" rel="noopener noreferrer" className="inline-block">
                             <img 
-                                src="https://www.energyclub.cl/img/cms/LEY_DEL_DEPORTE/donaciones_logo.jpg" 
+                                src="https://www.practicayoga.cl/logo-donaciones.jpgg" 
                                 alt="Ley del Deporte" 
                                 className="h-16 sm:h-20 w-auto object-contain mx-auto sm:mr-auto hover:opacity-80 transition-opacity"
                             />
