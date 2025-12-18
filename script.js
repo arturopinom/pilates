@@ -32,7 +32,7 @@ const TopLogoBar = () => {
                     </div>
                     <a href="http://www.mindep.cl/" target="_blank" rel="noopener noreferrer" className="logo-container-item">
                         <img 
-                            src="https://www.practicayoga.cl/logo-donaciones.jpg" 
+                            src="https://funglobalsports.cl/wp-content/uploads/2019/10/Logotipo-Donaciones-2017-vectorial-copia-908x1024.jpg" 
                             alt="Ley del Deporte" 
                             className="h-7 sm:h-8 md:h-10 w-auto object-contain"
                         />
